@@ -3,26 +3,31 @@
 #include <time.h>
 /**
  * main - Entry point
- * Description -'prints all possible different combinations of three digits'
+ * Description -'prints three digit'
  * Return: Always 0 (successful)
  */
 int main(void)
 {
-	int p, e;
+	int x, y, z;
 
-	for (p = '0'; p < '9'; p++)
+	for (x = '0'; x < '9'; x++)
 	{
 
-	for (e = p + 1; e <= '9'; e++)
+	for (y = x + 1; y <= '9'; y++)
 	{
-	if (e != p)
+
+	for (z = y + 1; z <= '9'; z++)
 	{
-	putchar(p);
-	putchar(e);
-	if (p == '8' && e == '9')
+	if ((y != x) != z)
+	{
+	putchar(x);
+	putchar(y);
+	putchar(z);
+	if (x == '7' && y == '8')
 	continue;
 	putchar(',');
 	putchar(' ');
+	}
 	}
 	}
 	}
