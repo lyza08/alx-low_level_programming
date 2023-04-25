@@ -8,15 +8,16 @@
 
 void print_alphabet_x10(void)
 {
-	int x;
+	int x = 48;
 	int y;
 
-	for (y = 1; x <= 10; x++)
+	while (x <= 57)
 	{
 		for  (y = 97; y <= 122; y++)
 		{
 		_putchar(y);
 		}
 		_putchar('\n');
+		x++;
 	}
 }
