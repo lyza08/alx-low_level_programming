@@ -1,13 +1,8 @@
-/*
- * file: 2-main.c
- */
-
-
 #include <stdio.h>
 
 /**
- * main - printing the name of the file of the program
- *        was compiled from, followed by a new line.
+ * main - prints the name of the file
+ *
  * Return: Always 0 (successful)
  */
 
